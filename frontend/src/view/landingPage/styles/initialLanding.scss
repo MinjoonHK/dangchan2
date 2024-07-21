@@ -1,0 +1,135 @@
+.initialLandingWrapper {
+  height: 90vh;
+  display: flex;
+}
+
+.initialLeftWrapper {
+  width: 50%;
+  height: 90vh;
+  padding-top: 15%;
+  display: flex;
+}
+
+.initialLeftWrapperInner {
+  width: 100%;
+}
+
+.initialLeftWrapperTitle {
+  margin-left: 20%;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.initialLeftWrapperSubtitle {
+  margin-left: 20%;
+  font-size: 1.5rem;
+}
+
+.initialButtonWrapper {
+  margin-left: 20%;
+}
+
+.initialLoginBtn {
+  height: 55px;
+  font-weight: bold;
+  color: white;
+  background-color: #85dad2;
+  border-color: transparent;
+}
+
+.initialSignUpBtn {
+  height: 55px;
+  font-weight: bold;
+  border: 2px solid black;
+  margin-left: 2%;
+}
+
+.initialRightWrapper {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 90vh;
+  justify-content: center;
+}
+
+.initialPageImage {
+  height: 68%;
+  width: 90%;
+  margin-top: 5%;
+}
+
+.moreInfoBtnWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.moreInfoBtn {
+  height: 55px;
+  font-weight: bold;
+  border-radius: 50px;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.moreInfoBtn span {
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .initialLandingWrapper {
+    flex-direction: column;
+  }
+
+  .initialLeftWrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  .initialLeftWrapperInner {
+    padding: 5%;
+  }
+
+  .initialLeftWrapperTitle {
+    margin-left: 0;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 7%;
+  }
+
+  .initialLeftWrapperSubtitle {
+    text-align: center;
+    font-size: 1rem;
+    margin-left: 0;
+  }
+
+  .initialButtonWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .initialLoginBtn {
+    margin-bottom: 1%;
+  }
+
+  .initialSignUpBtn {
+    width: 100%;
+    margin-left: 0;
+  }
+  .initialRightWrapper {
+    width: 100%;
+  }
+
+  .initialPageImage {
+    height: 68%;
+    margin-top: 0;
+  }
+
+  .moreInfoBtn {
+    width: 90%;
+  }
+}

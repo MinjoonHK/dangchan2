@@ -1,0 +1,76 @@
+.signUpOuterContainer {
+  margin-top: 5vh;
+}
+
+.signUpTitle {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.3rem;
+}
+
+.signUpContainer {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.signUpFormWrapper {
+  width: 40vw;
+  height: 80%;
+  border: 1px solid rgb(224, 224, 224);
+  margin-top: 2.5%;
+  margin-bottom: 5%;
+}
+
+.signUpFormInnerWrapper {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.signUpInnerContent {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 50%;
+}
+
+.signUpWelcomeMessage {
+  font-size: 1.8rem;
+}
+
+.signUpSubMessage {
+  color: rgb(143, 143, 143);
+  margin-top: 5%;
+}
+
+.backToLogin {
+  color: black;
+  margin-left: 5px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.signUpBtnWrapper {
+  margin-top: 15%;
+}
+
+@media screen and (max-width: 480px) {
+  .signUpFormWrapper {
+    width: 80vw;
+  }
+
+  .signUpTitle {
+    font-size: 2rem;
+  }
+
+  .signUpInnerContent {
+    width: 80%;
+  }
+  .signUpWelcomeMessage {
+    font-size: 1.8rem;
+  }
+
+  .signUpSubMessage {
+    font-size: 1.35rem;
+  }
+}

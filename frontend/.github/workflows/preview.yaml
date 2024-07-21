@@ -1,0 +1,30 @@
+#workflow 의 이름
+name: GitHub Actions Vercel Preview Deployment
+env:
+  #Vercel을 설치하면 .vercel폴더에 있는 project.json 에서 확인 가능한 시크릿 키
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
+#workflow를 동작하게 하는 트리거
+on:
+  #repository에 push가 일어나면 workflow가 동작
+  push:
+    #branch가 main이 아닌 경우에만 workflow가 동작
+    branches-ignore:
+      - main
+jobs:
+  #실제 배포가 아닌 Vercel의 preview 배포를 위한 job
+  Deploy-Preview:
+    #리눅스 환경에서 실행
+    runs-on: ubuntu-latest
+    #Vercel 공식문서에서 제공한 코드
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Vercel CLI
+        run: npm install --global vercel@canary
+      - name: Pull Vercel Environment Information
+        run: vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Build Project Artifacts
+        run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Deploy Project Artifacts to Vercel
+        run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}

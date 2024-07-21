@@ -1,0 +1,66 @@
+.landingReviewWrapper {
+  height: 100vh;
+  background-color: #85dad2;
+}
+
+.landingReviewInnerWrapper {
+  padding-top: 5%;
+}
+
+.landingReviewHeader {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  color: white;
+}
+
+.landingReviewSubHeader {
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 2%;
+  font-weight: bold;
+  color: white;
+}
+
+.landingReviewMarqueeWrapper {
+  width: 100%;
+  margin-top: 5%;
+}
+
+.landingFooter {
+  padding-top: 2%;
+}
+
+.reviewBoxWrapper {
+  width: 15vw;
+  height: 20vh;
+  background-color: white;
+  margin-left: 80px;
+  border-radius: 10px;
+  padding: 1% 5%;
+  border: 1px solid rgb(150, 150, 150);
+}
+
+@media screen and (max-width: 480px) {
+  .landingFooter {
+    height: 100%;
+    display: flex;
+    padding-top: 15%;
+    justify-content: center;
+  }
+  .landingReviewHeader {
+    font-size: 2.9rem;
+  }
+
+  .landingReviewSubHeader {
+    font-size: 1rem;
+    margin-top: 10%;
+  }
+  .reviewBoxWrapper {
+    width: 60vw;
+    margin-top: 5%;
+    font-size: 0.9rem;
+  }
+}

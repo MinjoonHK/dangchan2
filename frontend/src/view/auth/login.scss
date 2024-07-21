@@ -1,0 +1,106 @@
+.loginWrapper {
+  margin-top: 5vh;
+}
+
+.loginInnerWrapper {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.loginFormWrapper {
+  width: 40vw;
+  height: 70%;
+  border: 1px solid rgb(224, 224, 224);
+  margin-top: 5vh;
+}
+
+.loginFormHeader {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 5%;
+
+  .welcomeMessage {
+    font-size: 1.8rem;
+  }
+
+  .subMessage {
+    color: rgb(143, 143, 143);
+  }
+
+  .linkMessage {
+    .bannerLink {
+      color: black;
+      margin-left: 5px;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+}
+
+.loginFormInnerWrapper {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.loginInputWrapper {
+  margin-top: 7%;
+  width: 60%;
+
+  .loginButton {
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+    height: 50px;
+  }
+
+  .divider {
+    color: rgb(200, 200, 200);
+  }
+
+  .signupButton {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    background-color: #85dad2;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .loginFormWrapper {
+    margin-top: 20%;
+    width: 80vw;
+    height: 70%;
+  }
+
+  .welcomeMessage {
+    font-size: 1.4rem;
+  }
+  .subMessage {
+    font-size: 0.9rem;
+  }
+
+  .linkMessage {
+    font-size: 0.9rem;
+  }
+
+  .loginInnerWrapper {
+    height: 90vh;
+  }
+
+  .loginFormInnerWrapper {
+    margin-top: 10%;
+  }
+  .loginInputWrapper {
+    width: 80%;
+  }
+}
